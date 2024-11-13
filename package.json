@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "^1.1.13",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "react": "^19.0.0-rc-2ec26bc4-20241111",
+    "react-dom": "^19.0.0-rc-2ec26bc4-20241111",
+    "react-router-dom": "^6.28.0"
+  }
+}
