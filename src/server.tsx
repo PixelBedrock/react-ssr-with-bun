@@ -40,6 +40,8 @@ Bun.serve({
     let fetchRequest = createFetchRequest(req);
     let context = await handler.query(fetchRequest) as StaticHandlerContext;
 
+    if (context.statusCode !== 200) return new Response("", { status: context.statusCode });
+
     let router = createStaticRouter(handler.dataRoutes, context);
 
     let stream = await renderToReadableStream(

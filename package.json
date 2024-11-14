@@ -10,6 +10,7 @@
   "dependencies": {
     "react": "^19.0.0-rc-2ec26bc4-20241111",
     "react-dom": "^19.0.0-rc-2ec26bc4-20241111",
-    "react-router-dom": "^6.28.0"
+    "react-router-dom": "^6.28.0",
+    "styled-components": "^6.1.13"
   }
 }

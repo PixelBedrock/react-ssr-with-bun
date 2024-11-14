@@ -1,9 +1,14 @@
 import React from "react";
 import { json, Link, useLoaderData } from "react-router-dom";
+import styled from "styled-components";
 
 type World = {
   message: string
 }
+
+const StyledH1 = styled.h1`
+  font-family: system-ui;
+`;
 
 export default [
   {
@@ -15,7 +20,7 @@ export default [
       let data: World = useLoaderData() as World;
       return (
         <>
-          <h1>{data.message}</h1>
+          <StyledH1>{data.message}</StyledH1>
           <Link to={"/a-second-page"}>link to another page</Link>
         </>
       );
@@ -30,7 +35,7 @@ export default [
       let data: World = useLoaderData() as World;
       return (
         <>
-          <h1>{data.message}</h1>
+          <StyledH1>{data.message}</StyledH1>
           <Link to={"/"}>link back to the first page</Link>
         </>
       );
